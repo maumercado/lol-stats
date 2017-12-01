@@ -3,7 +3,7 @@ import { SEARCH, SEARCH_ERROR } from "./types";
 export const search = ({ search }) => async dispatch => {
     console.debug(search);
     try {
-        const res = await axios.get(`http://localhost:3001/v1/api/summoners`, {
+        const res = await axios.get(`/v1/api/summoners`, {
             params: { search }
         });
         dispatch({ type: SEARCH, payload: { loading: true } });
@@ -11,9 +11,7 @@ export const search = ({ search }) => async dispatch => {
             let { accountId } = res.data.summoner;
 
             const stats = await axios.get(
-                `http://localhost:3001/v1/api/summoners/${
-                    accountId
-                }/matches/latest`
+                `/v1/api/summoners/${accountId}/matches/latest`
             );
 
             dispatch({

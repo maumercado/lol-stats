@@ -22,6 +22,7 @@ class Matches extends Component {
                                         src={this.props.summoner.profileIconUrl}
                                         width="45px"
                                         height="45px"
+                                        alt="Champion Icon"
                                     />
                                 </th>
                                 <th>
