@@ -7,13 +7,11 @@
         "start": "concurrently \"npm run server\" \"npm run client\"",
         "server": "node index.js",
         "client": "node start-client",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "heroku-postbuild":
+            "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
     },
-    "keywords": [
-        "lol",
-        "stats",
-        "api"
-    ],
+    "keywords": ["lol", "stats", "api"],
     "author": "Mauricio Mercado",
     "license": "ISC",
     "dependencies": {
