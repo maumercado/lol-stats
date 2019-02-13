@@ -1,7 +1,6 @@
 import axios from "axios";
 import { SEARCH, SEARCH_ERROR } from "./types";
 export const search = ({ search }) => async dispatch => {
-    console.debug(search);
     try {
         const res = await axios.get(`/v1/api/summoners`, {
             params: { search }
