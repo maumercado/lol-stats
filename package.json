@@ -16,7 +16,7 @@
     "license": "ISC",
     "dependencies": {
         "axios": "^0.17.1",
-        "boom": "^7.1.1",
+        "boom": "^7.3.0",
         "bunyan": "^1.8.12",
         "handlebars": "^4.0.11",
         "hapi": "^17.1.1",
