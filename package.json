@@ -15,7 +15,7 @@
     "author": "Mauricio Mercado",
     "license": "ISC",
     "dependencies": {
-        "axios": "^0.17.1",
+        "axios": "^0.18.0",
         "boom": "^7.1.1",
         "bunyan": "^1.8.12",
         "handlebars": "^4.0.11",
