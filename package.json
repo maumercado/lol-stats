@@ -21,7 +21,7 @@
         "handlebars": "^4.0.11",
         "hapi": "^17.1.1",
         "inert": "^5.0.1",
-        "lodash": "^4.17.4",
+        "lodash": "^4.17.20",
         "vision": "^5.2.0"
     },
     "devDependencies": {
